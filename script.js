@@ -22,7 +22,10 @@ exit – Выйти из программы.`)
             }
             break
         case "addfilm":
-            alert("Under construction")
+            const filmName = prompt("Введите название фильма")
+            movieBase.push(filmName)
+            alert("Спасибо! Ваш фильм добавлен в базу")
+            break
         case "amount":
             alert("Количество фильмов в базе: " + movieBase.length + ".")
             break
