@@ -11,13 +11,15 @@ do {
     switch (cmd) {
         case "help":
             alert(`help – Просмотреть список команд.\n
-show – Просмотреть содержимое базы.\n
+show – Просмотреть содержимое базы в консоли разработчика (у Вас должна быть открыта консоль разработчика).\n
 addfilm – Добавить фильм в базу данных.\n
 amount – Просмотреть, сколько всего фильмов в базе.\n
 exit – Выйти из программы.`)
             break
         case "show":
-            alert("Under construction")
+            for (let item of movieBase) {
+                console.log(item)
+            }
             break
         case "addfilm":
             alert("Under construction")
