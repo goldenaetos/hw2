@@ -11,20 +11,21 @@ do {
     switch (cmd) {
         case "help":
             alert(`help – Просмотреть список команд.\n
-show – Просмотреть содержимое базы в консоли разработчика (у Вас должна быть открыта консоль разработчика).\n
-addfilm – Добавить фильм в базу данных.\n
+show – Просмотреть содержимое базы данных.\n
+addfilm – Добавить фильм в базу.\n
 amount – Просмотреть, сколько всего фильмов в базе.\n
 exit – Выйти из программы.`)
             break
         case "show":
             for (let item of movieBase) {
-                console.log(item)
+                alert(movieBase.join("\n"))
+                break
             }
             break
         case "addfilm":
             const filmName = prompt("Введите название фильма")
             movieBase.push(filmName)
-            alert("Спасибо! Ваш фильм добавлен в базу")
+            alert("Спасибо! Ваш фильм добавлен в базу.")
             break
         case "amount":
             alert("Количество фильмов в базе: " + movieBase.length + ".")
