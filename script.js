@@ -8,7 +8,11 @@ do {
     
     switch (cmd) {
         case "help":
-            alert("Under construction")
+            alert(`help – Просмотреть список команд.\n
+show – Просмотреть содержимое базы.\n
+addfilm – Добавить фильм в базу данных.\n
+amount – Просмотреть, сколько всего фильмов в базе.\n
+exit – Выйти из программы.`)
             break
         case "show":
             alert("Under construction")
