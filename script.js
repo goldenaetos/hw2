@@ -1,6 +1,8 @@
 alert(`Добро пожаловать в базу данных фильмов!
 Введите «help» для получения списка команд`)
 
+let movieBase = ["Унесенные ветром", "Форсаж 8"]
+
 do {
     const cmd = prompt("Введите команду.")
 
@@ -20,7 +22,7 @@ exit – Выйти из программы.`)
         case "addfilm":
             alert("Under construction")
         case "amount":
-            alert("Under construction")
+            alert("Количество фильмов в базе: " + movieBase.length + ".")
             break
         case "exit":
             break
