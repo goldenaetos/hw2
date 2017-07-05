@@ -24,5 +24,8 @@ exit – Выйти из программы.`)
             break
         case "exit":
             break
+        default:
+            alert("Команда не найдена! Для получения списка команд введите «help».")
+            break
     }
 } while (true)
